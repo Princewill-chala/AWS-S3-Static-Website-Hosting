@@ -21,7 +21,7 @@ The goal of this project was to:
 ---
 
 ## Architecture
-
+```
 User Browser
       |
       v
@@ -29,7 +29,7 @@ Amazon S3 Bucket
       |
       v
 Static Website Hosting Endpoint
-
+```
 ---
 
 ## Prerequisites
