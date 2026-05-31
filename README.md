@@ -1,11 +1,11 @@
 # AWS-S3-Static-Website-Hosting
+![Background Image](S3_Bucket/S3_Image.png)
 End-to-end implementation of a static website hosted on AWS S3. Includes bucket creation, public access policy setup, static website hosting configuration, and security considerations.
 
-# AWS S3 Static Website Hosting Project
 
 ## Project Overview
 
-This project demonstrates how to host a static website using Amazon S3. The implementation includes creating an S3 bucket, configuring bucket permissions, enabling public access, and hosting a website through the S3 Static Website Hosting feature.
+Implemented an end-to-end static website hosting solution using AWS S3, covering bucket provisioning, policy configuration, public content delivery, and website hosting. The project demonstrates practical cloud deployment skills and an understanding of secure access management in AWS.
 
 ## Objective
 
@@ -32,16 +32,6 @@ Static Website Hosting Endpoint
 ```
 ---
 
-## Prerequisites
-
-Before starting, ensure you have:
-
-- An AWS account
-- IAM user with S3 permissions
-- Static website files (HTML, CSS, JavaScript)
-
----
-
 ## Step 1: Create an S3 Bucket
 
 1. Log in to the AWS Management Console.
@@ -52,9 +42,7 @@ Before starting, ensure you have:
 6. Leave default settings unless customization is required.
 7. Click **Create bucket**.
 
-### Screenshot
-
-![Create Bucket](images/create-bucket.png)
+![Create Bucket](S3_Bucket/Bucket.png)
 
 ---
 
@@ -67,10 +55,6 @@ Before starting, ensure you have:
    - style.css
    - script.js
 4. Complete the upload process.
-
-### Screenshot
-
-![Upload Files](images/upload-files.png)
 
 ---
 
@@ -90,9 +74,7 @@ By default, S3 blocks public access to protect resources.
 4. Acknowledge the warning.
 5. Save changes.
 
-### Screenshot
-
-![Public Access](images/public-access.png)
+![Public Access](S3_Bucket/disable_block-access.png)
 
 ---
 
@@ -117,9 +99,7 @@ Replace `YOUR-BUCKET-NAME` with your actual bucket name.
 }
 ```
 
-### Screenshot
-
-![Bucket Policy](images/bucket-policy.png)
+![Bucket Policy](S3_Bucket/bucket_policy.png)
 
 ---
 
@@ -137,9 +117,7 @@ Replace `YOUR-BUCKET-NAME` with your actual bucket name.
 
 6. Save changes.
 
-### Screenshot
-
-![Static Hosting](images/static-hosting.png)
+![Static Hosting](S3_Bucket/static_website_enable.png)
 
 ---
 
@@ -150,14 +128,12 @@ After enabling Static Website Hosting, AWS generates a website endpoint.
 Example:
 
 ```text
-http://my-static-site.s3-website-us-east-1.amazonaws.com
+[http://my-static-site.s3-website-us-east-1.amazonaws.com](https://chala-s3-demo-bucket.s3.eu-west-1.amazonaws.com/SBuzz_PowerBi.png)
 ```
 
 Open the endpoint in a browser to verify the website is publicly accessible.
 
-### Screenshot
-
-![Website Live](images/website-live.png)
+![Website Live](S3_Bucket/static_web_confirmed.png)
 
 ---
 
@@ -193,17 +169,6 @@ During this project, I learned:
 - Configure HTTPS with AWS Certificate Manager
 - Register a custom domain using Route 53
 - Implement CI/CD deployment pipeline
-
----
-
-## Technologies Used
-
-- Amazon S3
-- AWS IAM
-- HTML
-- CSS
-- JavaScript
-
 ---
 
 ## Author
